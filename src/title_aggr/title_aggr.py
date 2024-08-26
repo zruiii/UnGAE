@@ -5,7 +5,7 @@ import pandas as pd
 import pickle as pkl
 from collections import Counter
 
-path = '/data_process/title_aggr/'
+path = '../title_aggr/'
 
 class TitleAggr(object):
     def __init__(self, grain='fun'):
@@ -114,4 +114,5 @@ class TitleAggr(object):
 
 if __name__ == "__main__":
     cleaner = TitleAggr('fun')
-    print(cleaner.filter_title('Test Manager'))
+    print(cleaner.filter_title('Sr. software engineer'))
+    # print(cleaner.filter_title('Test Manager'))
